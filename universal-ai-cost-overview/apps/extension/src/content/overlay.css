@@ -1,0 +1,30 @@
+
+#uaco-overlay {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2147483647;
+  width: 250px;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+#uaco-overlay .uaco-title {
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#uaco-overlay .uaco-note {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 11px;
+  line-height: 1.4;
+}

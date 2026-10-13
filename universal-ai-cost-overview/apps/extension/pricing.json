@@ -1,0 +1,16 @@
+
+{
+  "defaultModel": "example-model",
+  "models": {
+    "example-model": {
+      "name": "Example AI Model",
+      "inputPerMillion": 2.0,
+      "outputPerMillion": 8.0
+    },
+    "budget-model": {
+      "name": "Budget Example Model",
+      "inputPerMillion": 0.2,
+      "outputPerMillion": 0.8
+    }
+  }
+}

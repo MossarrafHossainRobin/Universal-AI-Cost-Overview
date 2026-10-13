@@ -1,0 +1,32 @@
+
+{
+  "manifest_version": 3,
+  "name": "Universal AI Cost Overview",
+  "version": "1.0.0",
+  "description": "Estimate AI prompt tokens and costs locally before submitting.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*"
+  ],
+  "action": {
+    "default_title": "Universal AI Cost Overview",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": [
+        "src/content/detector.js",
+        "src/content/prompt-analyzer.js"
+      ],
+      "css": ["src/content/overlay.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

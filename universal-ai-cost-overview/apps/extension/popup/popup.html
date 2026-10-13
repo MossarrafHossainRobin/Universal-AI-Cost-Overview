@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Cost Overview</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>AI Cost Overview</h1>
+    <p class="subtitle">Your latest local estimate</p>
+
+    <section class="metric">
+      <span>Estimated input tokens</span>
+      <strong id="tokens">0</strong>
+    </section>
+
+    <section class="metric">
+      <span>Estimated input cost</span>
+      <strong id="cost">$0.000000</strong>
+    </section>
+
+    <p class="privacy">Your prompt text is not saved by this extension.</p>
+    <button id="refresh">Refresh estimate</button>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
